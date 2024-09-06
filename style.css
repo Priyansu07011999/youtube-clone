@@ -5,6 +5,11 @@
     font-family: 'Poppins', 'sans-serif';
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -18,10 +23,12 @@ nav {
     position: sticky;
     top: 0;
     background-color: white;
+    z-index: 50;
 }
 
 .nav-left img {
-    width: 50px;
+    width: 30px;
+    margin: 10px;
 }
 
 .nav-right img {
@@ -39,23 +46,25 @@ nav {
     display: flex;
     align-items: center;
     width: 100%;
-    background-color: #f1f1f1; /* Light background for input */
-    border-radius: 30px; /* Rounded corners for a modern look */
-    padding: 5px 15px; /* Add padding inside */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    height: 40px;
+    background-color: #f1f1f1;
+    border-radius: 30px;
+    padding: 5px 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    justify-content: space-evenly;
 }
 
 .nav-middle input {
     width: 100%;
-    border: none; /* Remove the input border */
-    outline: none; /* Remove the outline */
+    border: none;
+    outline: none;
     padding: 10px;
-    background-color: transparent; /* Inherit background */
-    font-size: 16px;
+    background-color: transparent;
+    font-size: 20px;
 }
 
 .search {
-    width: 20px;
+    width: 30px;
     cursor: pointer;
 }
 
@@ -72,4 +81,52 @@ img {
 .profile {
     border-radius: 50%;
     border: 1px solid black;
+}
+
+/* Sidebar styling */
+.sidebar-upper {
+    position: fixed;
+    top: 60px; 
+    left: 0; 
+    width: 80px; 
+    height: 100vh; 
+    background-color: white; 
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: flex-start; 
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); 
+}
+
+.sidebar-upper a {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.sidebar-item {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.sidebar-item img {
+    width: 40px;
+    margin-bottom: 8px; 
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-item p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.sidebar-item img:hover {
+    background-color: grey; 
+    padding: 10px;
+    border-radius: 50%; 
 }
