@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="header">
+        <div class="nav-left header">
+            <img class="hamburger" src="./images/menu.png" alt="">
+            <img class="youtube-logo" src="./images/youtube.png" alt="youtube-logo">
+        </div>
+
+        <div class="nav-middle header">
+            <div class="search-container">
+                <input type="text" placeholder="Search">
+                <img class="search" src="./images/search.png" alt="">
+            </div>
+            <img class="mike" src="./images/microphone.png" alt="" name="say">
+        </div>
+
+        <div class="nav-right header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                <polygon points="23 7 16 12 23 17 23 7"></polygon>
+            </svg>
+           <img class="notification-icon" src="./images/notification.png" alt="">
+           <img src="./images/shiba.png" alt="" class="profile">
+        </div>
+    </nav>
+
+    <div class="custom-video-container">
+        <video id="myVideo" class="video" width="600" controls>
+            <source src="./videos/video1.mp4" type="video/mp4">
+        </video>      
+        <div class="video-info">
+            <h2>AI company just raised $1 bn</h2> 
+            <div class="channel-info">
+                <p>
+                    <img class="profile-photo" src="./images/th.jpeg" alt="">
+                        Hitesh Choudhary 
+                    <img class="tick-icon" src="./images/accept.png" alt="">
+                </p>
+                <div class="subscribe-container">
+                    <button class="subscribe-btn">Subscribed</button>
+                    <div class="dropdown">
+                        <button class="dropdown-btn">
+                            <img class="arrow-icon" src="./images/down-arrow.png" alt="arrow">
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">All</a>
+                            <a href="#">Personalize</a>
+                            <a href="#">Unsubscribe</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-side">
+                    <div class="inner-like-dislike">
+                        <div class="like">
+                            <button class="like"><img class="like-btn" src="./images/like.png" alt=""><p class="like-info">18k</p></button>
+                        </div>
+                        <div class="dislike">
+                            <button class="dislike"><img src="./images//dislike.png" alt="" class="dislike-btn"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</body>
+</html>
